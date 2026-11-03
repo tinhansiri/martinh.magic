@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>welcome | Martin H. website
+  
+  </title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .cover {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .smoke {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://giphy.com/gifs/foggy-gif-RI42LtoMA5mxi') center center / cover no-repeat;
+      opacity: 100;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .enter-btn {
+      background-color: rgb(2, 190, 241);
+      color: black;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      transition: background 0.5s;
+    }
+
+    .enter-btn:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="smoke"></div>
+    <div class="overlay">
+      <h2>🎩 Welcome to </h2>
+      <h1>Martin H. Magic services</h1>
+      <a href="main.html" class="enter-btn">Enter website</a>
+    </div>
+  </div>
+</body>
+</html>
